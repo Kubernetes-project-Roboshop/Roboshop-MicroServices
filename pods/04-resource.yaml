@@ -5,7 +5,7 @@ metadata:
 spec:
   containers:
     - name: stress
-      image: docker pull progrium/stress
+      image: progrium/stress
       imagePullPolicy: Always
       command: ["sleep","200"]
       
