@@ -8,3 +8,7 @@ For any project we have morethen one namepsce,which is virtual cluster .
 # kubectl api-resources 
 Which will show all the resources available in the cluster.
 # kubectl api-resources | grep -i pod
+# kubectl apply -f <file-name>
+to create namespace i did
+#git clone -b <branch-name> <git url>
+# kubectl get ns <to get namespaces>
