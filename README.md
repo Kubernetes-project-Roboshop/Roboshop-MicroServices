@@ -21,3 +21,11 @@ Side car container works with main container and it will share same network and 
 Web container is busy with serving the traffic so it can't do all the things.
 The sidecar container provides supporting features or complementary functionality to the main container, such as logging, monitoring, or networking.
 By running the sidecar and main containers together in the same pod, they can share the same network namespace and filesystem, making it easier to communicate and share data between them. The sidecar pattern is commonly used for tasks such as service discovery, load balancing, and security.
+
+# kubectl exec -it multicontainers -c sidecar -- bash
+then curl localhost
+
+### Image pull policy:
+When you first time pulling the image from docker hub or container registry,it will get, but over a period of time if developers update the image and if you apply it again ,it will shows like image already exixst.
+so to resolve this issue we need image pull policy . 
+

@@ -10,7 +10,7 @@ spec:
       ports:
         - containerPort: 80
     - name: sidecar
-      image: almalinux
+      image: almalinux #This will pushh all the logs to elk
       command: ["sleep","200"]
 
       
