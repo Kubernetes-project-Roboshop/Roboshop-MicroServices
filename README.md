@@ -12,3 +12,12 @@ Which will show all the resources available in the cluster.
 to create namespace i did
 #git clone -b <branch-name> <git url>
 # kubectl get ns <to get namespaces>
+# kubectl get pods -n session2 <namespace-name>
+smallest deployable unit in k8s is POD.
+morethen One container will store in one POD.
+
+# SideCar:
+Side car container works with main container and it will share same network and namespace,it will push all the logs to log storage like ELK WHICH MAIN CONTAINER GENARATED.
+Web container is busy with serving the traffic so it can't do all the things.
+The sidecar container provides supporting features or complementary functionality to the main container, such as logging, monitoring, or networking.
+By running the sidecar and main containers together in the same pod, they can share the same network namespace and filesystem, making it easier to communicate and share data between them. The sidecar pattern is commonly used for tasks such as service discovery, load balancing, and security.

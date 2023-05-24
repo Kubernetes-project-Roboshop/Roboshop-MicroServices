@@ -8,4 +8,7 @@ spec:
     - name: nginx-image 
       image: nginx 
       ports:
-        - containerPort: 80
+        - containerPort: 80 
+
+# kubectl get pods -n session2 <namespace-name> 
+# In k8s smallest deployable unit is pod
