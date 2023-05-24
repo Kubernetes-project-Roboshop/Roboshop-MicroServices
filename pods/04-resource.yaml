@@ -8,4 +8,10 @@ spec:
       image: progrium/stress
       imagePullPolicy: Always
       command: ["sleep","200"]
-      
+      resources:
+        requests:
+          cpu: "150m" # 1cpuis 1000m
+          memory: "200mi"
+        limits:
+          cpu: "300m"
+          memory: "400mi"

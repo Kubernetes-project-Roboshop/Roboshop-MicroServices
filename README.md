@@ -27,5 +27,8 @@ then curl localhost
 
 ### Image pull policy:
 When you first time pulling the image from docker hub or container registry,it will get, but over a period of time if developers update the image and if you apply it again ,it will shows like image already exixst.
-so to resolve this issue we need image pull policy . 
+so to resolve this issue we need image pull policy .
+
+### Limits and Resources or requesrs:
+
 
