@@ -10,8 +10,8 @@ spec:
       command: ["sleep","200"]
       resources:
         requests:
-          cpu: "150m" # 1cpuis 1000m
-          memory: "200mi"
+          memory: "64Mi"
+          cpu: "250m"
         limits:
-          cpu: "300m"
-          memory: "400mi"
+          memory: "128Mi"
+          cpu: "500m"
