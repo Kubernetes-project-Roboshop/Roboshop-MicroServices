@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod 
+metadata:
+  name: labels
+  labels:
+    k8s-learning: practice
+    name: Arun 
+spec:
+  containers:
+    - name: nginx-1
+      image: nginx
+      imagePullPolicy: Always
+      
