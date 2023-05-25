@@ -6,7 +6,7 @@ metadata:
 spec:
   containers:
   - name: app
-    image: jenkins
+    image: jenkins/jenkins:lts
     resources:
       requests:
         memory: "64Mi"
