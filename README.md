@@ -30,5 +30,20 @@ When you first time pulling the image from docker hub or container registry,it w
 so to resolve this issue we need image pull policy .
 
 ### Limits and Resources or requesrs:
+Give limits and requests to the container, if not it will uses baased on traffic of incomming.
+Some times we forget to give limits and requests to the containers so we need to give default limits ranges pod.
 
+### Docker Best practices:
+Use lightweight bease images like almalinux,busybox
+2.multi stage builds,will remove unneccessary installations.
+3.not root users
+4.Use volumes for statefull applications.
+5.Use docker compose.
+6.Use Env variables for insted of hard coding for sensitive informations
+7.Use dedicated custom networks
+8.don't keep secrets in images
+9.Scan the images to fix volunarabilities and code smell
+10.Limit resources CPU,RAM
+11.Configure health checks
+12.Push docker image to docker hub
 
