@@ -47,3 +47,16 @@ Use lightweight bease images like almalinux,busybox
 11.Configure health checks
 12.Push docker image to docker hub
 
+### Labels:
+ to help identify and organize Kubernetes resources. Labels are key-value pairs that can be attached to Kubernetes objects such as pods, services, and deployments.
+  For example, you can use labels to select all the pods that belong to a particular application or service.
+  For example, you can use labels to group all the pods that belong to a particular team or project.
+  For example, you can use labels to manage rolling updates of deployments or to route traffic to specific services based on their labels.
+  #### Resources:
+  Pods can use the cpu and memory of undelying system cpu nad memory completely, if there is anything happend like bad request comes it will block the memory and cpu.
+  For that purpose useally we limit the container size to use the resources.
+
+  #### kubectl describe pods <pod name>
+  ### kubectl get pod -o wide 
+
+
